@@ -1,27 +1,96 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 기본 스타일 */
+*,*::before,*::after {
+ box-sizing: border-box;
+}
 
+/* css를 이용한 가상 요소들을 만들어낸것. */
+/*마크업이 아닌 css에서 추가적으로 보여주고 싶을 때 주로 사용하고, 아이콘 보여주고싶어서 한다. 드래그 안됨
+비포,에프터 함수 공부하기  */
+
+/* .main::before{
+ content: "첫번째 자식요소 입니다.";
+
+}
+.main::after{
+  content: "마지막 자식요소 입니다.";
+
+ } */
+
+
+/* 본문 스타일 */
 body{
   background: #ffc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   
 
 }
+/* 레이아웃 */
+.header,.visual,.main,.slogan,.footer-inner{
+  width:940px;
+  margin: 0 auto;
+  }
 
+/* 헤더 */
 .header{
   background: pink;
+  padding:0 30px; /*시계방향 단위, 현재 이건 좌우 단위가 30px줌*/
+  height:15vh;
 }
+/* 비주얼 */
 .visual{
   background: orange;
+  height:10vh;
 }
+/* 메인 */
 .main{
   background: lightgreen;
+  height:50vh;
+  display: flow-root;
+  padding: 0 50px;
+
 }
+
+
+
+
+.group1,.group2,.group3{
+  margin: 0 15px;
+ 
+}
+.group1{
+  background-color: violet;
+  width: 250px;
+  float: left;
+  text-align: center;
+}
+.group2{
+  background-color: salmon;
+  width: 380px;  
+  float: left;
+}
+.group3{
+  background-color: gold;
+  width: 190px;
+  float: left;
+  
+}
+
+/* 슬로건 */
 .slogan{
   background: skyblue;
+  height:10vh;
 }
+/* 푸터 */
 .footer{
   background: gray;
   color:coral;
+  height:15vh;
+}
+
+.footer-inner{
+  background: silver;
+  height: 15vh;
 }
