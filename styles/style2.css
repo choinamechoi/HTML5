@@ -1,5 +1,6 @@
 @import url(./normalize.css);
-@import url(./reset.css);
+@import url(./reset.css); 
+/* 리셋 url은 agent를 초기화시켜서 최대한 안헷갈리게 해주는 역할이었다. */
 
 *,*::before,*::after {
   box-sizing: border-box;
@@ -7,7 +8,7 @@
  
 
  body{
-  background-color: #ffc;
+  background-color: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight:bolder;
   }
@@ -18,9 +19,11 @@
   }
 
  .header{
-    background-color:pink;
+    background-color:#fff;
     height:15vh;
     padding:0 30px; 
+    border-radius:0 0 15px 15px / 0 0 50px 50px ;
+    position:relative;
   }
 
   .visual{
@@ -73,4 +76,16 @@
     height:15vh;
   }
   
+  .logo{
+    background-color: blue;
+    position: absolute;
+    top:45px;
+    left:60px;
+  }
+  /*
+  position을 absolute로 주면 상위블럭이 default값이 아닌것을 기준으로 잡아버리나???? 
+   */
+ .member{
+  background-color: skyblue;
+ }
 
