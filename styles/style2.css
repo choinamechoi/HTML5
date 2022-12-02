@@ -29,18 +29,22 @@
   }
 
   .main{
-    background-color: green;
-    height:50vh;
+    background-color: lightgreen;
+    
+    min-height:450px;
     display : flex; 
-    flex-direction: row;
-  
+   
+    flex-flow :row nowrap;
+    justify-content : space-between;
+    align-items: flex-start;
+    padding: 30px;
     
   }
 
   .group1{
     background-color: violet;
     width:250px;
-    order: 1;
+    
    }
    .group2{
     background-color: coral;
@@ -49,9 +53,9 @@
         
   }
   .group3{
-    background-color: orange;
+    background-color: yellow;
     width:190px;
-  
+   
     
   }
   
