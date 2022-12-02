@@ -1,0 +1,76 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+*,*::before,*::after {
+  box-sizing: border-box;
+ }
+ 
+
+ body{
+  background-color: #ffc;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight:bolder;
+  }
+
+  .header,.visual,.main,.footer-inner,.slogan{
+    width: 940px;
+    margin: 0 auto;
+  }
+
+ .header{
+    background-color:pink;
+    height:15vh;
+    padding:0 30px; 
+  }
+
+  .visual{
+    background-color: orange;
+    height:10vh;
+  }
+
+  .main{
+    background-color: lightgreen;
+    
+    min-height:450px;
+    display : flex; 
+   
+    flex-flow :row nowrap;
+    justify-content : space-between;
+    align-items: flex-start;
+    padding: 30px;
+    
+  }
+
+  .group1{
+    background-color: violet;
+    width:250px;
+    
+   }
+   .group2{
+    background-color: coral;
+    width:380px;
+   
+        
+  }
+  .group3{
+    background-color: yellow;
+    width:190px;
+   
+    
+  }
+  
+  .slogan{
+    background-color: skyblue;
+    height:10vh;
+  }
+  .footer{
+    background-color: gray;
+    height:15vh;
+
+  }
+  .footer-inner{
+    background-color: silver;
+    height:15vh;
+  }
+  
+
